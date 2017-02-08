@@ -6,4 +6,5 @@ You can also use Docker to start a Selenium Grid hub and nodes. Each Docker cont
 2. Run three Firefox node containers: `docker run -d --link selenium_hub:hub selenium/node-firefox`
 3. Run the tests against the Docker container by using the `Remote` driver and the appropriate value for `--port`
 4. Open the web console at  http://localhost:4444/grid/console and see the nodes in use.
+5. Determine the id of the containers: `docker ps`
 5. Kill the Docker containers: `docker kill [id]`
